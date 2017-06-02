@@ -1,0 +1,72 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+
+# When people signup for beta
+POST    /home/signupbeta            controllers.HomeController.signupBeta
+
+# When users start up the app and establish a connection
+POST    /account/login              controllers.AccountController.login
+
+# When users sign up, go here
+POST    /account/signup             controllers.AccountController.signup
+
+# When users want to update their sse, this is depreciated, should always use update multi
+# POST    /update                     controllers.EncryptedSearchController.update
+
+# When users want to send multiple files in their update
+POST    /sse/updatemulti            controllers.EncryptedSearchController.updateMulti
+
+# When users want to query their see
+POST    /sse/query                  controllers.EncryptedSearchController.query
+
+# When users want to verify their account
+GET     /account/verify             controllers.AccountController.verify(code: String ?="", id: String ?="")
+
+# When users want to query by timestamp
+POST    /sse/querytimestamp         controllers.EncryptedSearchController.queryTimestamp
+
+# When users want to clear their image name cookie
+POST    /sse/removeimagecookie      controllers.EncryptedSearchController.resetImageIDCookie
+
+# When users want to get the full image
+POST    /sse/queryfullimage         controllers.EncryptedSearchController.getFullImage
+
+# When users want to get the medium image while the full image loads
+POST    /sse/querymediumimage       controllers.EncryptedSearchController.getMediumImage
+
+# When users want to initiate password recovery
+POST    /account/requestrecover     controllers.AccountController.requestRecover
+
+# When users submit their password recovery info
+POST    /account/recoverpassword    controllers.AccountController.recoverPassword
+
+# When users want to back up their state (should be encrypted)
+POST    /sse/backupstate            controllers.EncryptedSearchController.backupState
+
+# When users want to associate encrypted tags with the images they uploaded
+POST    /sse/uploadtags             controllers.EncryptedSearchController.uploadTags
+
+# When users want to retrieve the tags of an image
+POST    /sse/downloadtags           controllers.EncryptedSearchController.getImageTags
+
+# When users request to register a new device
+POST    /account/requestregister    controllers.AccountController.requestRegister
+
+# When users send their verification code when registering a new device
+POST    /account/registerdevice     controllers.AccountController.registerNewDevice
+
+# When users want to delete an image
+POST    /sse/delete                 controllers.EncryptedSearchController.deleteImage
+
+# When users want to update token
+#POST    /sse/updatetoken           controllers.EncryptedSearchController.updateMultiToken
+
+# When users want to update image files
+#POST    /sse/updatefile             controllers.EncryptedSearchController.updateMultiFile
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

@@ -1,0 +1,299 @@
+/* Header */
+
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.pixek-logo-title {
+	width: 300px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	top: 30%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.second-title {
+	width: 100%;
+    position: absolute;
+	margin: auto;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	font-size: 4em;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.down-arrow {
+	position: absolute;
+	margin: auto;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 90%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	width: 80px;
+	filter: invert(100%);
+}
+
+.thin {
+	font-weight: 200;
+}
+
+.icon-div {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+.icon-image {
+	width: 50%;
+}
+
+.icon-div-wrapper {
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.text-justify {
+	text-align: justify;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.screenshot-wrapper {
+	height: 600px;
+}
+
+.light-pink {
+	background-color: #ED3B33;
+}
+
+.darker-pink {
+	background-color: #BF2A28;
+}
+
+.dark-pink {
+	background-color: #9B1D1F;
+}
+
+.screenshot-image {
+	width: 300px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+.footer-wrapper {
+	height: 60px;
+	background-color: #303030;
+}
+
+.pre-footer {
+	height: 300px;
+	background-color: #202020;
+	text-align: center;
+}
+
+.white-text {
+	color: white;
+	width: 40%;
+	margin-left: 10%;
+	margin-top: 100px;
+	position: absolute;
+}
+
+.white-text-real {
+	color: white;
+}
+
+.black-text {
+	float: right;
+	width: 40%;
+	margin-right: 10%;
+	margin-top: 100px;
+}
+
+.screenshot-image-left {
+	width: 300px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.team-img {
+	background: 50% 50% no-repeat; /* 50% 50% centers image in div */
+	width: 250px;
+}
+
+.linkedin-icon {
+	margin: 10px;
+	width: 30px;
+}
+
+.header-bar {
+	top: 0;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	z-index: 2;
+	padding-right: 30px;
+}
+
+.header-logo {
+	display: table;
+	float: left;
+	margin-left: 60px;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.nav-colored {
+	background-color:#000;
+}
+
+.nav-transparent {
+	background-color:transparent;
+}
+
+.header-elements {
+	display: table;
+	float: right;
+	margin-right: 30px;
+}
+
+.email-input-submit {
+	position: absolute;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	top: 75%;
+	left: 50%;
+	margin-left: 170px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	width: 120px;
+	height: 50px;
+	border: none;
+}
+
+.email-input-top {
+	position: absolute;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	top: 75%;
+	left: 50%;
+	margin-left: -50px;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	width: 320px;
+	height: 50px;
+	border: none;
+}
+
+.email-input-bottom-wrapper {
+	padding-top: 60px;
+	text-align: center;
+}
+
+.email-input-submit-bottom {
+	vertical-align: top;
+	display: inline-block;
+	width: 120px;
+	height: 50px;
+	border: none;
+	margin-left: -10px;
+}
+
+.email-input-bottom {
+	vertical-align: top;
+	display: inline-block;
+	width: 320px;
+	height: 50px;
+	border: none;
+	text-align: center;
+}
+
+.email-input-bottom-title {
+	margin: 0 auto;
+	padding-top: 50px;
+	font-size: 3em;
+}
+
+.footer-name {
+	display: table;
+	float: left;
+	margin-left: 60px;
+}
+
+.footer-item {
+	float: right;
+	margin-right: 60px;
+	display: table;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title, 
+	.demo-3 .main-title,
+	.demo-4 .main-title {
+		font-size: 3em;
+	}
+
+	.demo-2 .main-title {
+		font-size: 4em;
+	}
+}
+
+*::-webkit-input-placeholder {
+    color: grey;
+    text-align: center;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: grey;
+    text-align: center;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: grey;
+    text-align: center;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: grey;
+    text-align: center;
+}

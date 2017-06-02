@@ -1,0 +1,159 @@
+@(title: String)
+
+<html lang="en">
+<head>
+ <title>@title</title>
+ <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/normalize.css")">
+ <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/demo.css")">
+ <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/component.css")">
+ <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+ <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    <script src="@routes.Assets.versioned("javascripts/scrollTo.js")"></script>
+    <script src="@routes.Assets.versioned("javascripts/navbar.js")"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="@routes.Assets.versioned("favicon/apple-icon-57x57.png")">
+    <link rel="apple-touch-icon" sizes="60x60" href="@routes.Assets.versioned("favicon/apple-icon-60x60.png")">
+    <link rel="apple-touch-icon" sizes="72x72" href="@routes.Assets.versioned("favicon/apple-icon-72x72.png")">
+    <link rel="apple-touch-icon" sizes="76x76" href="@routes.Assets.versioned("favicon/apple-icon-76x76.png")">
+    <link rel="apple-touch-icon" sizes="114x114" href="@routes.Assets.versioned("favicon/apple-icon-114x114.png")">
+    <link rel="apple-touch-icon" sizes="120x120" href="@routes.Assets.versioned("favicon/apple-icon-120x120.png")">
+    <link rel="apple-touch-icon" sizes="144x144" href="@routes.Assets.versioned("favicon/apple-icon-144x144.png")">
+    <link rel="apple-touch-icon" sizes="152x152" href="@routes.Assets.versioned("favicon/apple-icon-152x152.png")">
+    <link rel="apple-touch-icon" sizes="180x180" href="@routes.Assets.versioned("favicon/apple-icon-180x180.png")">
+    <link rel="icon" type="image/png" sizes="192x192"  href="@routes.Assets.versioned("favicon/android-icon-192x192.png")">
+    <link rel="icon" type="image/png" sizes="32x32" href="@routes.Assets.versioned("favicon/favicon-32x32.png")">
+    <link rel="icon" type="image/png" sizes="96x96" href="@routes.Assets.versioned("favicon/favicon-96x96.png")">
+    <link rel="icon" type="image/png" sizes="16x16" href="@routes.Assets.versioned("favicon/favicon-16x16.png")">
+    <link rel="manifest" href="@routes.Assets.versioned("favicon/manifest.json")">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="@routes.Assets.versioned("favicon/ms-icon-144x144.png")">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div id="top"></div>
+<div class="content">
+    <div id="mynav" class="header-bar white-text-real">
+        <img id="logo" class="header-logo" src="@routes.Assets.versioned("images/pixek_logo600.png")">
+        <h2 id="technology-button" class="header-elements thin">Technology</h2>
+        <h2 id="features-button" class="header-elements thin">Features</h2>
+        <h2 id="team-button" class="header-elements thin">Team</h2>
+    </div>
+
+    <div id="large-header" class="large-header">
+        <canvas id="demo-canvas"></canvas>
+        <!-- <img src="images/pixek_logo600.png" class="pixek-logo-title"></img> -->
+        <h1 class="second-title">Searchable Encryption <br> <span class="thin">on Cloud-based Image Storage</span></h1>
+        <input id="email-input-top" class="email-input-top" type="text" name="email" placeholder="example@@example.com">
+        <button id="email-input-submit" class="email-input-submit light-pink white-text-real">Request Beta Access</button>
+        <img id="down-arrow" src="@routes.Assets.versioned("images/single-down.png")" class="down-arrow"></img>
+    </div>
+
+    <div id="technology" class="codrops-header">
+        <h1>The next generation of usability and security</h1>
+    </div>
+
+
+    <div class="icon-div-wrapper">
+        <div class="icon-div">
+            <h1>Security</h1>
+            <img class="icon-image" src="@routes.Assets.versioned("images/lock.png")"></img>
+            <p class="text-justify">We use provably secure Searchable Symmetric Encryption with industry standard 256 bit AES to ensure that your data is completely protected while still fully searchable.</p>
+        </div>
+        <div class="icon-div">
+            <h1>Scalability</h1>
+            <img class="icon-image" src="@routes.Assets.versioned("images/scalable.png")"></img>
+            <p class="text-justify">Our encryption scheme is massively scalable with little overhead, so it doesn't matter whether you have hundreds or millions of images. Your data will always be efficient and fast to retrieve.</p>
+        </div>
+        <div class="icon-div">
+            <h1>Deep Learning</h1>
+            <img class="icon-image" src="@routes.Assets.versioned("images/neural_net.png")"></img>
+            <p class="text-justify">We use convolutional neural nets in order to process all your data locally on your device and we never use any third party APIs, so there is no chance of any your data will be leaked.</p>
+        </div>
+    </div>
+
+
+    <div id="features" class="screenshot-wrapper light-pink">
+        <h1 class="white-text thin">
+            We take your security seriously. We make sure that only you have access to your secret key, and that only you can decrypt and view your data even in the case of your device being compromised.
+        </h1>
+        <img class="screenshot-image" src="@routes.Assets.versioned("images/pixek_login.png")">
+    </div>
+
+    <div class="screenshot-wrapper">
+        <h1 class="black-text thin">
+            Forget the security apps that require weeks of training to use correctly. We offer an intuitive UI based on your favorite apps, so you can jump right into protecting your data using the best encryption the industry has to offer.
+        </h1>
+        <img class="screenshot-image-left" src="@routes.Assets.versioned("images/usability.gif")">
+    </div>
+
+    <div class="screenshot-wrapper darker-pink">
+        <h1 class="white-text thin">
+            We use the latest image recognition technology optimized for mobile devices in order to generate tags for your images. Our deep convolutional neural net can recognize 1000 different types of objects, making your experience much smoother.
+        </h1>
+        <img class="screenshot-image" src="@routes.Assets.versioned("images/tagging.gif")">
+    </div>
+
+    <div class="screenshot-wrapper">
+        <h1 class="black-text thin">
+            Once you've uploaded your pictures, simply search by their tags and retrieve them instantly. The entire process is end to end encrypted, and no one gets to see your pictures or your searches except for you.
+        </h1>
+        <img class="screenshot-image-left" src="@routes.Assets.versioned("images/search.gif")">
+    </div>
+
+    <div id="team" class="screenshot-wrapper dark-pink white-text-real">
+        <div class="codrops-header">
+            <h1>The Team</h1>
+        </div>
+        <div class="icon-div-wrapper">
+            <div class="icon-div">
+                <h1 class="thin">Martin Zhu</h1>
+                <img class="icon-image img-circle team-img" src="@routes.Assets.versioned("images/martin.jpg")"></img>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/martin-zhu-94134588"><img class="linkedin-icon" src="@routes.Assets.versioned("images/linkedin-icon.png")"></a>
+                    <a target="_blank" href="http://martinjzhu.com"><img class="linkedin-icon" src="@routes.Assets.versioned("images/website-white-icon.png")"></a>
+                </div>
+            </div>
+            <div class="icon-div">
+                <h1 class="thin">Tarik Moataz</h1>
+                <img class="icon-image img-circle team-img" src="@routes.Assets.versioned("images/tarik.jpg")"></img>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/tarik-moataz-b6a5922b/"><img class="linkedin-icon" src="@routes.Assets.versioned("images/linkedin-icon.png")"></a>
+                    <a target="_blank" href="http://cs.brown.edu/~tmoataz/"><img class="linkedin-icon" src="@routes.Assets.versioned("images/website-white-icon.png")"></a>
+                </div>
+            </div>
+            <div class="icon-div">
+                <h1 class="thin">Seny Kamara</h1>
+                <img class="icon-image img-circle team-img" src="@routes.Assets.versioned("images/seny.jpg")"></img>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/seny-kamara-63aba4/"><img class="linkedin-icon" src="@routes.Assets.versioned("images/linkedin-icon.png")"></a>
+                    <a target="_blank" href="https://cs.brown.edu/people/seny/"><img class="linkedin-icon" src="@routes.Assets.versioned("images/website-white-icon.png")"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pre-footer">
+        <h1 class="thin white-text-real email-input-bottom-title">The easiest way to secure your data.</h1>
+
+        <div class="email-input-bottom-wrapper">
+            <input id="email-input-bottom" class="email-input-bottom" type="text" name="email" placeholder="example@@example.com">
+            <button id="email-input-submit-bottom" class="email-input-submit-bottom light-pink white-text-real">Request Beta Access</button>
+        </div>
+
+    </div>
+
+    <div class="footer-wrapper">
+        <h3 class="footer-name white-text-real thin">Pixek©2017</h3>
+        <h5 class="footer-item white-text-real thin">TERMS OF SERVICE</h5>
+        <h5 class="footer-item white-text-real thin">PRIVACY</h5>
+    </div>
+</div>
+</body>
+<script src="@routes.Assets.versioned("javascripts/TweenLite.min.js")" type="text/javascript"></script>
+ <script src="@routes.Assets.versioned("javascripts/EasePack.min.js")" type="text/javascript"></script>
+<script src="@routes.Assets.versioned("javascripts/rAF.js")" type="text/javascript"></script>
+ <script src="@routes.Assets.versioned("javascripts/demo-1.js")" type="text/javascript"></script>
+</html>
